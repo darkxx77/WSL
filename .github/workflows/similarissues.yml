@@ -27,6 +27,6 @@ jobs:
         run: gh issue comment "$NUMBER" --repo "$REPO" --body "$BODY"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NUMBER: ${{ github.event.issue.number }}
+           A_   NUMBER: ${{ github.event.issue.number }}
           REPO: ${{ github.repository }}
           BODY: ${{ needs.getsimilarissues.outputs.message }}
